@@ -1,737 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicons -->
-    <link href="img/avatar.jpg" rel="icon" />
-    <link href="img/avatar.jpg" rel="apple-touch-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank Joshi — Data Engineer & Architect</title>
+  <meta name="description" content="Data Engineer & Architect with 4+ years building reliable data platforms — event-driven systems, cloud infrastructure, and governance at scale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/avatar.jpg" />
+  <link rel="apple-touch-icon" href="img/avatar.jpg" />
+</head>
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<body>
 
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <div class="progress-bar" id="progressBar"></div>
 
-    <!-- Main Stylesheet File -->
-    <link href="css/style-sky-blue.css" rel="stylesheet" />
-
-    <!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-  </head>
-
-  <body id="page-top">
-    <!--/ Nav Star /-->
-    <nav
-      class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-      id="mainNav"
-    >
-      <div class="container">
-        <a class="navbar-brand js-scroll" href="#page-top"></a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarDefault"
-          aria-controls="navbarDefault"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div
-          class="navbar-collapse collapse justify-content-end"
-          id="navbarDefault"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#about">About</a>
-            </li>
-            <!-- <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#contact">Contact</a>
-            </li>
-          </ul>
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">mayankjoshi954</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#experience">work</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#blog">blog</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div class="theme-switcher" style="display: none;">
+        <div class="mode-toggle" id="modeToggle">
+          <span class="mode-pill active" id="modeDark" onclick="setMode('dark')">dark</span>
+          <span class="mode-pill" id="modeLight" onclick="setMode('light')">light</span>
+        </div>
+        <div class="theme-divider-line"></div>
+        <div class="theme-group" id="themeGroup">
+          <button class="theme-btn active" data-t="cyan" title="Cyan" onclick="setColor('cyan')"></button>
+          <button class="theme-btn" data-t="violet" title="Violet" onclick="setColor('violet')"></button>
+          <button class="theme-btn" data-t="amber" title="Amber" onclick="setColor('amber')"></button>
         </div>
       </div>
-    </nav>
-    <!--/ Nav End /-->
+      <a href="#contact" class="nav-cta">get in touch ↗</a>
+    </div>
+  </nav>
 
-    <!--/ Intro Skew Star /-->
-    <div
-      id="home"
-      class="intro route bg-image"
-      style="background-image: url(img/background.webp)"
-    >
-      <div class="overlay-itro"></div>
-      <div class="intro-content display-table">
-        <div class="table-cell">
-          <div class="container">
-            <!--<p class="display-6 color-d">Hello, world!</p>-->
-            <h1 class="intro-title mb-4">I am Mayank Joshi</h1>
-            <p class="intro-subtitle">
-              <span class="text-slider-items"
-                >Data Engineer, Cloud Data Architect, Python Developer, Graphic
-                Desinger </span
-              ><strong class="text-slider"></strong>
-            </p>
-            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div style="position:relative;z-index:2;">
+      <p class="hero-tag" id="heroTag">❯ Data Architect · Platform Builder · Problem Solver</p>
+      <h1 class="hero-name" id="heroName">Mayank<br /><span>Joshi</span></h1>
+
+      <div class="hero-meta" id="heroMeta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">4+</span>
+          <span class="hero-meta-label">years of experience</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">3+</span>
+          <span class="hero-meta-label">industries served</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">Cloud</span>
+          <span class="hero-meta-label">GCP · AWS</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">M.Tech</span>
+          <span class="hero-meta-label">BITS Pilani</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">B.Tech</span>
+          <span class="hero-meta-label">GBPUA&T</span>
+        </div>
+      </div>
+
+      <div class="hero-actions" id="heroActions">
+        <a href="#contact" class="btn-primary">Say hello →</a>
+        <a href="https://github.com/mayankjoshi954" target="_blank" rel="noreferrer" class="btn-ghost">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/mayankjoshi954" target="_blank" rel="noreferrer" class="btn-ghost">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" id="heroScroll">SCROLL</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label reveal">about</div>
+      <div class="section-title reveal reveal-delay-1">I design<br />platforms that<br />make data useful.</div>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-delay-2">
+          <p>I'm a <strong>Data Engineer &amp; Architect</strong> with 4+ years designing and building data platforms that
+            teams and products actually rely on. I focus on turning fragmented data into structured, trustworthy systems
+            — end to end.</p>
+          <p>I work across <strong>data architecture, event-driven platforms, cloud infrastructure, and
+              governance</strong> — with a mindset that good data engineering is invisible: it just works, scales, and
+            never surprises you at midnight.</p>
+          <p>Whether you're hiring, building, or just want to talk data — <strong>let's connect.</strong></p>
+          <div style="margin-top:32px;display:flex;gap:16px;">
+            <a href="https://medium.com/@mayankjoshi954" target="_blank" rel="noreferrer" class="btn-ghost"
+              style="font-size:11px;padding:9px 20px;">Medium ↗</a>
+            <a href="https://github.com/mayankjoshi954" target="_blank" rel="noreferrer" class="btn-ghost"
+              style="font-size:11px;padding:9px 20px;">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="about-stats reveal reveal-delay-3">
+          <div class="stat-cell">
+            <div class="stat-num">4<span>+</span></div>
+            <div class="stat-desc">years designing data platforms</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">3<span>+</span></div>
+            <div class="stat-desc">industries — agri, edtech & telecom/IoT</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">GCP<span>+</span></div>
+            <div class="stat-desc">AWS · cloud-native by default</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">Kafka<span></span></div>
+            <div class="stat-desc">event streaming specialist</div>
           </div>
         </div>
       </div>
     </div>
-    <!--/ Intro Skew End /-->
+  </section>
 
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row" style="margin-top: 20%;">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img
-                          src="img/profile.png"
-                          class="img-fluid rounded b-shadow-a"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">Name: </span>
-                          <span>Mayank Joshi</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Profile: </span>
-                          <span>Data Engineer</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Email: </span>
-                          <span>mayankjoshi954@gmail.com</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Phone: </span>
-                          <span>(+91) 78178 97779</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS3</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div> -->
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">About me</h5>
-                    </div>
-                    <p class="lead">
-                      I’m a Data Engineer with 4+ years of experience working with cloud and big data technologies, focused on building reliable and scalable data solutions. I’ve designed and maintained cloud-based data pipelines, automated data workflows, and worked with large, diverse datasets across different business domains. My work emphasizes ELT optimization, data quality, data migration and efficient data operations through strong governance practices and performance tuning.
-                    </p>
-                    <p class="lead">
-                      Skilled in Python, SQL, Kafka, Spark, and cloud tools like
-                      Terraform and Docker, I develop real-time, efficient data
-                      solutions. Passionate about solving complex challenges, I
-                      thrive on building systems that drive insights.
-                    </p>
-                    <p class="lead">
-                      Let's connect and explore how data can power innovation!
-                      🚀
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label reveal">experience</div>
+      <div class="section-title reveal reveal-delay-1">Where I've<br />built & shipped.</div>
+      <div class="exp-list">
 
-    <!--/ Section Services Star /-->
-    <!-- <section id="service" class="services-mf route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Services
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
+        <div class="exp-item reveal">
+          <div>
+            <div class="exp-date">Apr 2026 → now</div>
+            <div class="exp-badge current">current</div>
+          </div>
+          <div>
+            <div class="exp-role">Software Engineer - Data</div>
+            <div class="exp-company"><span>Aeris</span></div>
+            <ul class="exp-bullets">
+              <li>Architected and maintained data platforms on GCP powering network analytics and security event
+                processing for an IoT product.</li>
+              <li>Designed a near-real-time data correlation system for telecom data — from schema and storage decisions
+                to processing architecture.</li>
+              <li>Solved platform-wide data quality and performance problems through schema redesign, partitioning
+                strategies, and pipeline refactoring.</li>
+              <li>Owned incident response for the data layer — diagnosing root causes and shipping targeted fixes to
+                keep the platform reliable.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">PySpark</span><span class="exp-tag">BigQuery</span><span
+                class="exp-tag">GCP</span><span class="exp-tag">Dataproc</span><span class="exp-tag">RocksDB</span><span
+                class="exp-tag">IoT</span><span class="exp-tag">Geofencing</span>
+            </div>
           </div>
         </div>
+
+        <div class="exp-item reveal reveal-delay-1">
+          <div>
+            <div class="exp-date">Apr 2025 → Mar 2026</div>
+            <div class="exp-badge">previous</div>
+          </div>
+          <div>
+            <div class="exp-role">Data Engineer & Architect</div>
+            <div class="exp-company">DataHavn IT · Client: <span>Aeris</span></div>
+            <ul class="exp-bullets">
+              <li>Contracted at Aeris as a Data Engineer, then transitioned to a full-time role after a year of embedded work.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">PySpark</span><span class="exp-tag">BigQuery</span><span
+                class="exp-tag">GCP</span><span class="exp-tag">Dataproc</span><span class="exp-tag">RocksDB</span><span
+                class="exp-tag">IoT</span><span class="exp-tag">Geofencing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal reveal-delay-2">
+          <div>
+            <div class="exp-date">Sep 2022 → Feb 2025</div>
+            <div class="exp-badge past">past</div>
+          </div>
+          <div>
+            <div class="exp-role">Associate Data Engineer</div>
+            <div class="exp-company"><span>Yara International</span></div>
+            <ul class="exp-bullets">
+              <li>Architected an event-driven data platform using Kafka and AWS services, unifying data flows from
+                multiple microservices into a single reliable source.</li>
+              <li>Designed dimensional data models and ELT pipelines with Airflow and dbt, enabling business KPI
+                reporting across teams.</li>
+              <li>Built the foundation for enterprise data governance with Collibra — cataloging assets, tagging PII,
+                and defining data ownership policies.</li>
+              <li>Owned a database migration end-to-end, redesigning schemas to fit updated product and business
+                requirements.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">Kafka</span><span class="exp-tag">AVRO</span><span class="exp-tag">AWS
+                Lambda</span><span class="exp-tag">AWS Glue</span><span class="exp-tag">Airflow</span><span
+                class="exp-tag">dbt</span><span class="exp-tag">Collibra</span><span class="exp-tag">Redshift</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal reveal-delay-3">
+          <div>
+            <div class="exp-date">Feb 2022 → May 2022</div>
+            <div class="exp-badge past">internship</div>
+          </div>
+          <div>
+            <div class="exp-role">Data Analyst Intern</div>
+            <div class="exp-company"><span>Careervira</span></div>
+            <ul class="exp-bullets">
+              <li>Automated web scraping across multiple sources using Python, BeautifulSoup, and Selenium.</li>
+              <li>Cleaned and processed datasets using Pandas to ensure accuracy for downstream analysis.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">Python</span><span class="exp-tag">BeautifulSoup</span><span
+                class="exp-tag">Selenium</span><span class="exp-tag">Pandas</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label reveal">skills</div>
+      <div class="section-title reveal reveal-delay-1">Stack &amp;<br />specialties.</div>
+      <div class="skills-grid reveal reveal-delay-2">
+        <div class="skill-cat">
+          <div class="skill-cat-name">Big Data</div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">PySpark</span>
+            <span class="skill-pill highlight">Kafka</span>
+            <span class="skill-pill highlight">Databricks</span>
+            <span class="skill-pill highlight">dbt</span>
+            <span class="skill-pill highlight">Airflow</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
+        <div class="skill-cat">
+          <div class="skill-cat-name">Languages & DB</div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">Python</span>
+            <span class="skill-pill highlight">SQL</span>
+            <span class="skill-pill">Bash</span>
+            <span class="skill-pill">BigQuery</span>
+            <span class="skill-pill">Redshift</span>
+            <span class="skill-pill">ClickHouse</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Photography</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
+        <div class="skill-cat">
+          <div class="skill-cat-name">Cloud & DevOps</div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">GCP</span>
+            <span class="skill-pill highlight">AWS</span>
+            <span class="skill-pill">Terraform</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">GitHub Actions</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
+        <div class="skill-cat skill-cat-wide">
+          <div class="skill-cat-name">Data Quality & Governance</div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">Collibra</span>
+            <span class="skill-pill">Great Expectations</span>
+            <span class="skill-pill">Data Contracts</span>
+            <span class="skill-pill">PII Detection</span>
+            <span class="skill-pill">Metadata Cataloging</span>
+            <span class="skill-pill">AVRO / Schema Registry</span>
+            <span class="skill-pill">EDA · Event Sourcing</span>
+            <span class="skill-pill">RocksDB</span>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-    <!--/ Section Services End /-->
+  </section>
 
-    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">450</p>
-              <span class="counter-text">WORKS COMPLETED</span>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label reveal">projects</div>
+      <div class="section-title reveal reveal-delay-1">Shipped &amp;<br />open source.</div>
+      <a href="https://github.com/mayankjoshi954/realtime-data-streaming" target="_blank" rel="noreferrer"
+        class="project-card reveal reveal-delay-2">
+        <div>
+          <div class="project-num">01 / project</div>
+          <div class="project-name">Real-Time Streaming Data Pipeline</div>
+          <div class="project-desc">An end-to-end streaming pipeline built to demonstrate production-grade architecture:
+            Kafka for reliable event ingestion, Spark for distributed processing, Cassandra for fast NoSQL storage, and
+            Airflow for orchestration. Fully containerized with Docker Compose.</div>
+          <div class="exp-tags" style="margin-top:16px;">
+            <span class="exp-tag">Kafka</span><span class="exp-tag">Spark</span><span
+              class="exp-tag">Cassandra</span><span class="exp-tag">Airflow</span><span
+              class="exp-tag">Docker</span><span class="exp-tag">Python</span>
+          </div>
+          <div class="project-link" style="margin-top:20px;">View on GitHub →</div>
+        </div>
+        <div style="color:var(--muted);font-size:28px;padding-top:4px;transition:transform 0.3s;">↗</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="section-inner">
+      <div class="section-label reveal">writing</div>
+      <div class="section-title reveal reveal-delay-1">Thoughts<br />on data.</div>
+      <div class="blog-grid reveal reveal-delay-2">
+        <a href="https://medium.com/@mayankjoshi954/agentic-engineering-and-the-evolution-of-data-engineering-91f9dff7d5b6"
+          target="_blank" class="blog-card">
+          <div class="blog-tag">AI · Data Engineering</div>
+          <div class="blog-title">Agentic Engineering and the Evolution of Data Engineering</div>
+          <div class="blog-desc">The future of data engineering isn’t more automation. It’s higher abstraction. When AI
+            can generate pipelines, debug workflows, and optimize queries, the real value moves upward — toward system
+            design, governance, and intent definition.</div>
+          <div class="blog-read"><span>Read on Medium</span><span>→</span></div>
+        </a>
+        <a href="https://medium.com/@mayankjoshi954/using-multiple-events-under-same-kafka-topic-e2cbcb8a0b9c"
+          target="_blank" class="blog-card">
+          <div class="blog-tag">Kafka · Architecture</div>
+          <div class="blog-title">Publishing Heterogeneous Events in the Same Kafka Topic</div>
+          <div class="blog-desc">How to publish heterogeneous event data to a single Kafka topic in Confluent Cloud
+            using AVRO backward compatibility — cutting topic proliferation and simplifying architecture.</div>
+          <div class="blog-read"><span>Read on Medium</span><span>→</span></div>
+        </a>
+        <a href="https://medium.com/@mayankjoshi954/detecting-pii-data-using-aws-glue-432d7e535638" target="_blank"
+          class="blog-card">
+          <div class="blog-tag">AWS · Data Governance</div>
+          <div class="blog-title">Detecting PII Data Using AWS Glue</div>
+          <div class="blog-desc">Why identifying PII in data warehouses is critical, and a practical walkthrough for
+            detecting PII in AWS Redshift using AWS Glue — from configuration to compliance.</div>
+          <div class="blog-read"><span>Read on Medium</span><span>→</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials">
+    <div class="section-inner">
+      <div class="section-label reveal">credentials</div>
+      <div class="section-title reveal reveal-delay-1">Learning,<br />never stops.</div>
+      <div class="cred-grid reveal reveal-delay-2">
+        <div>
+          <div class="cred-section-title">education</div>
+          <div class="cred-item">
+            <div class="cred-name">M.Tech — Data Science & Engineering</div>
+            <div class="cred-sub">
+              <span>BITS Pilani (WILP)</span>
+              <span class="cred-year">2025 – 2027</span>
             </div>
           </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+          <div class="cred-item">
+            <div class="cred-name">B.Tech — Computer Engineering</div>
+            <div class="cred-sub">
+              <span>GB Pant University, Pantnagar</span>
+              <span class="cred-year">2018 – 2022</span>
             </div>
-            <div class="counter-num">
-              <p class="counter">15</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
+            <div style="margin-top:6px;font-size:11px;color:var(--muted);">GPA: 7.8</div>
           </div>
         </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+        <div>
+          <div class="cred-section-title">certifications</div>
+          <div class="cred-item">
+            <div class="cred-name">AWS Certified Cloud Practitioner</div>
+            <div class="cred-sub">
+              <span>Amazon Web Services</span>
+              <span class="cred-year">Jan 2024</span>
             </div>
-            <div class="counter-num">
-              <p class="counter">550</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
+            <div style="margin-top:6px;font-size:11px;color:var(--accent);">CLF-C01</div>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </section>
 
-    <!--/ Section Portfolio Star /-->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Projects</h3>
-              <p class="subtitle-a">My work</p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <div class="work-img">
-                <!-- <img src="img/work-1.jpg" alt="" class="img-fluid"> -->
-              </div>
-              <div class="work-content">
-                <a
-                  href="https://github.com/mayankjoshi954/realtime-data-streaming"
-                  target="_blank"
-                >
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Realtime Data Streaming</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory"
-                          >Realtime data streaming project using Kafka, Spark
-                          Streaming and Cassandra</span
-                        >
-                        / <span class="w-date">Dec 2024</span>
-                      </div>
-                    </div>
-                    <!-- <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div> -->
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Work3</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Engg</span> / <span class="w-date">1 Jan 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div> -->
-        </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="contact-headline">Got a data<br />problem to<br /><em>solve?</em></div>
+        <div class="contact-sub">Open to data engineering and architecture roles, platform-building projects, and good
+          technical conversations. Based in Dehradun, India.</div>
       </div>
-    </section>
-    <!--/ Section Portfolio End /-->
-
-    <!--/ Section Testimonials Star /-->
-    <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme">
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Xavi Alonso</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Marta Socrate</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
+      <div class="contact-links reveal reveal-delay-2">
+        <a href="mailto:mayankjoshi954@gmail.com" class="contact-link">
+          <div class="contact-link-icon"
+            style="color:#6ee7f7;border-color:rgba(110,231,247,0.2);background:rgba(110,231,247,0.06);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 7l10 7 10-7" />
+            </svg>
           </div>
-        </div>
+          <div class="contact-link-text">
+            <span class="contact-link-label">email</span>
+            <span class="contact-link-value">mayankjoshi954@gmail.com</span>
+          </div>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mayankjoshi954" target="_blank" rel="noreferrer" class="contact-link">
+          <div class="contact-link-icon"
+            style="color:#7dd3fc;border-color:rgba(125,211,252,0.2);background:rgba(125,211,252,0.06);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          <div class="contact-link-text">
+            <span class="contact-link-label">linkedin</span>
+            <span class="contact-link-value">mayankjoshi954</span>
+          </div>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://github.com/mayankjoshi954" target="_blank" rel="noreferrer" class="contact-link">
+          <div class="contact-link-icon"
+            style="color:#c4b5fd;border-color:rgba(196,181,253,0.2);background:rgba(196,181,253,0.06);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </div>
+          <div class="contact-link-text">
+            <span class="contact-link-label">github</span>
+            <span class="contact-link-value">mayankjoshi954</span>
+          </div>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://medium.com/@mayankjoshi954" target="_blank" rel="noreferrer" class="contact-link">
+          <div class="contact-link-icon"
+            style="color:#86efac;border-color:rgba(134,239,172,0.2);background:rgba(134,239,172,0.06);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+            </svg>
+          </div>
+          <div class="contact-link-text">
+            <span class="contact-link-label">medium</span>
+            <span class="contact-link-value">@mayankjoshi954</span>
+          </div>
+          <span class="contact-link-arrow">↗</span>
+        </a>
       </div>
     </div>
-  </div> -->
+  </section>
 
-    <!--/ Section Blog Star /-->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Blog</h3>
-              <p class="subtitle-a">Medium Articles</p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a
-                  href="https://medium.com/@mayankjoshi954/using-multiple-events-under-same-kafka-topic-e2cbcb8a0b9c"
-                  target="_blank"
-                  ><img
-                    src="img/post1.jpeg"
-                    alt=""
-                    class="img-fluid"
-                    height="100"
-                /></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <!-- <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div> -->
-                </div>
-                <h3 class="card-title">
-                  <a
-                    href="https://medium.com/@mayankjoshi954/using-multiple-events-under-same-kafka-topic-e2cbcb8a0b9c"
-                    target="_blank"
-                    >Publishing Heterogeneous Events in the same Kafka Topic
-                  </a>
-                </h3>
-                <p class="card-description">
-                  Read bout how to publish heterogeneous events data to a single
-                  Kafka topic in Confluent Cloud.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img
-                      src="img/avatar.jpg"
-                      alt=""
-                      class="avatar rounded-circle"
-                    />
-                    <span class="author">Mayank Joshi</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="ion-ios-clock-outline"></span> 5 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a
-                  href="https://medium.com/@mayankjoshi954/detecting-pii-data-using-aws-glue-432d7e535638"
-                  target="_blank"
-                  ><img
-                    src="img/post2.jpeg"
-                    alt=""
-                    class="img-fluid"
-                    height="100"
-                /></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <!-- <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div> -->
-                </div>
-                <h3 class="card-title">
-                  <a
-                    href="https://medium.com/@mayankjoshi954/detecting-pii-data-using-aws-glue-432d7e535638"
-                    target="_blank"
-                    >Detecting PII data using AWS Glue
-                  </a>
-                </h3>
-                <p class="card-description">
-                  Learn why identifying PII in data warehouses is crucial and
-                  how to detect PII in AWS Redshift using AWS Glue.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img
-                      src="img/avatar.jpg"
-                      alt=""
-                      class="avatar rounded-circle"
-                    />
-                    <span class="author">Mayank Joshi</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="ion-ios-clock-outline"></span> 7 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ Section Blog End /-->
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Mayank Joshi</span>
+    <span style="color:var(--border2)">·</span>
+    <span>Dehradun, India</span>
+    <span style="color:var(--border2)">·</span>
+    <span>built with intent</span>
+  </footer>
 
-    <!--/ Section Contact-Footer Star /-->
-    <section
-      class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(img/bg2.jpg)"
-    >
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <!-- <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Send Message
-                    </h5>
-                  </div>
-                  <div>
-                      <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                              <div class="validation"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div> -->
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">Get in Touch</h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Feel free to reach out—I'm happy to connect!
-                      </p>
-                      <ul class="list-ico">
-                        <li>
-                          <span class="ion-ios-location"></span> New Delhi, IN
-                        </li>
-                        <li>
-                          <span class="ion-ios-telephone"></span> (+91)
-                          78178-9779
-                        </li>
-                        <li>
-                          <a href="mailto:mayankjoshi954@gmail.com"
-                            ><span class="ion-email"></span>
-                            mayankjoshi954@gmail.com</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li> -->
-                        <!-- <li><a href="instagram.com/mayank.joshi"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li> -->
-                        <li>
-                          <a href="https://www.linkedin.com/in/mayankjoshi954/"
-                            ><span class="ico-circle"
-                              ><i class="ion-social-linkedin"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/mayankjoshi954/"
-                            ><span class="ico-circle"
-                              ><i class="ion-social-github"></i></span
-                          ></a>
-                        </li>
-                        <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li> -->
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="copyright-box">
-                <!-- <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p> -->
-                <div class="credits">
-                  <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
-                  Designed by
-                  <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-    <!--/ Section Contact-footer End /-->
+  <script src="js/main.js"></script>
+</body>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
-
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-  </body>
 </html>
